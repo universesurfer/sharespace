@@ -13,6 +13,7 @@ import { SigninComponent } from "./auth/signin.component";
 import { AuthService } from "./auth/auth.service";
 import { ErrorComponent } from "./errors/error.component";
 import { ErrorService } from "./errors/error.service";
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ErrorService } from "./errors/error.service";
       LogoutComponent,
       SignupComponent,
       SigninComponent,
-      ErrorComponent
+      ErrorComponent,
+      SearchComponent
   ],
   imports: [
     BrowserModule,
