@@ -17,7 +17,7 @@ searchForm: FormGroup;
 
   constructor(private http: Http,
               private errorService: ErrorService,
-              private homeAwayService: HomeawayService,
+              private homeAwayService: HomeawayService
               ) { }
 
   ngOnInit() {
@@ -35,11 +35,12 @@ searchForm: FormGroup;
       guests: this.searchForm.value.guests
     }
 
+    console.log('trip', trip);
         this.homeAwayService.searchParams(trip)
-            .subscribe(
-                data => console.log(data),
-                error => console.error(error)
-            );
+            // .subscribe(
+            //   data => console.log(data),
+            //   error => console.error(error)
+            // );
         this.searchForm.reset();
     }
 
