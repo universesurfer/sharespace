@@ -14,6 +14,7 @@ import { AuthService } from "./auth/auth.service";
 import { ErrorComponent } from "./errors/error.component";
 import { ErrorService } from "./errors/error.service";
 import { SearchComponent } from './search/search.component';
+import { HomeawayService } from './homeaway/homeaway.service'
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { SearchComponent } from './search/search.component';
     ReactiveFormsModule,
     HttpModule
   ],
-  providers: [AuthService, ErrorService],
+  providers: [AuthService, ErrorService, HomeawayService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
